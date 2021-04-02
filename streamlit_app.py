@@ -3,7 +3,7 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
-import plotly.plotly as py
+import plotly as py
 
 st.title('Maeves Covid Dashboard')                    
 
