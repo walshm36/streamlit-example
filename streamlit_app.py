@@ -7,6 +7,12 @@ import streamlit as st
 
 st.title('Maeves Covid Dashboard')                    
 
-df = pd.read_csv("/Users/maevewalsh/Desktop/Project/melted_cases.csv")
+dDATA_URL = ('melted_cases.csv')
+@st.cache
+def load_data():
+    data = pd.read_csv(DATA_URL)
+    return data
+df = load_data()
 
-st.write(df)
+# show data on streamlit
+ st.write(df)
