@@ -16,7 +16,3 @@ def load_data():
 df = load_data()
 
 st.write(df)
-'''
-fig = px.area(df, x="Date", y="1000 Cases", color="Country/Region")
-
-st.write(fig)
