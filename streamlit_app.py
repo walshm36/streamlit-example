@@ -8,7 +8,7 @@ import streamlit as st
 st.title('Maeves Covid Dashboard')
                        
 
-df = pd.read_csv(".Desktop/Project/melted.csv")  
+df = pd.read_csv("/Users/maevewalsh/Desktop/Project/melted_cases.csv")  
 
 st.title("Hello world!")  # add a title
 st.write(df)
