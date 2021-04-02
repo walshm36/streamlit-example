@@ -7,6 +7,6 @@ import streamlit as st
 
 st.title('Maeves Covid Dashboard')                    
 
-df = pd.read_excel("/Users/maevewalsh/Desktop/Project/melted_cases")  
+df = pd.read_csv("cases.csv")
 
 st.write(df)
