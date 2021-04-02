@@ -7,12 +7,11 @@ import streamlit as st
 
 st.title('Maeves Covid Dashboard')
 
-DATA_URL = ('https://github.com/walshm36/streamlit-example/blob/762bfb00f06a5561781344d1136efd0edb8a221f/melted_cases.csv')
 
 
 @st.cache
 def load_data(nrows):
-    data = pd.read_csv(DATA_URL, nrows=nrows)
+    data = pd.read_csv("Desktop/Project/melted.csv, nrows=nrows)
     return data
 
 # Create a text element and let the reader know the data is loading.
