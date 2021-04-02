@@ -7,7 +7,7 @@ import streamlit as st
 
 st.title('Maeves Covid Dashboard')                    
 
-dDATA_URL = ('melted_cases.csv')
+DATA_URL = ('melted_cases.csv')
 @st.cache
 def load_data():
     data = pd.read_csv(DATA_URL)
