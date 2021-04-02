@@ -3,7 +3,7 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
-conda install -c plotly plotly_express==0.4.0
+from plotly.express import *
 
 
 st.title('Maeves Covid Dashboard')                    
