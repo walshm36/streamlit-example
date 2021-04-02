@@ -20,4 +20,5 @@ st.write(df)
 
 #graph
 fig = px.area(df, x="Date", y="1000 Cases", color="Country/Region")
-fig.show()
+
+st.plotly_chart(fig)
