@@ -5,10 +5,8 @@ import pandas as pd
 import streamlit as st
 
 
-st.title('Maeves Covid Dashboard')
-                       
+st.title('Maeves Covid Dashboard')                    
 
-df = pd.read_csv("/Users/maevewalsh/Desktop/Project/melted_cases.csv")  
+df = pd.read_excel("/Users/maevewalsh/Desktop/Project/melted_cases")  
 
-st.title("Hello world!")  # add a title
 st.write(df)
