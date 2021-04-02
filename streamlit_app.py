@@ -9,6 +9,8 @@ st.title('Maeves Covid Dashboard')
 
 DATA_URL = ('https://github.com/walshm36/streamlit-example/blob/762bfb00f06a5561781344d1136efd0edb8a221f/melted_cases.csv')
 
+
+@st.cache
 def load_data(nrows):
     data = pd.read_csv(DATA_URL, nrows=nrows)
     return data
@@ -18,4 +20,4 @@ data_load_state = st.text('Loading data...')
 # Load 10,000 rows of data into the dataframe.
 data = load_data(10)
 # Notify the reader that the data was successfully loaded.
-data_load_state.text('Loading data...done!')
+data_load_state.text("Done! (using st.cache)")
