@@ -8,7 +8,7 @@ import streamlit as st
 st.title('Maeves Covid Dashboard')
 
 
-
+"""
 @st.cache
 def load_data(nrows):
     data = pd.read_csv("Desktop/Project/melted.csv, nrows=nrows)
@@ -23,3 +23,11 @@ data_load_state.text("Done! (using st.cache)")
 
 st.subheader('Raw data')
 st.write(data)
+"""
+                       
+
+df = pd.read_csv(".Desktop/Project/melted.csv")  # read a CSV file inside the 'data" folder next to 'app.py'
+# df = pd.read_excel(...)  # will work for Excel files
+
+st.title("Hello world!")  # add a title
+st.write(df)
