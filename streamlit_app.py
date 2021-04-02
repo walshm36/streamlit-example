@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 
 
-st.title('My title')
+st.title('Maeves Covid Dashboard')
 
 st.write("Here's our first attempt at using data to create a table:")
 st.write(pd.DataFrame({
