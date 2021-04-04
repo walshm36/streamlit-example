@@ -20,7 +20,7 @@ st.write(df)
 
 fig = px.area(df, x="Date", y="1000 Cases", 
               color_discrete_sequence=px.colors.qualitative.Dark24,
-              template=plotly_white,
+              template="plotly_white",
               color="Country/Region")
 
 st.write(fig)
