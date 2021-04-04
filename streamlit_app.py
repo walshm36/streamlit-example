@@ -42,6 +42,4 @@ c = alt.Chart(df).mark_area().encode(
 st.altair_chart(c, use_container_width=True)
 
 st.subheader('Graph: Third Iteration')
-st.pyplot(fig)
-
 
