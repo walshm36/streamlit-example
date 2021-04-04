@@ -47,8 +47,9 @@ st.altair_chart(c, use_container_width=True)
 st.subheader('Graph: Third Iteration')
 
 values = st.sidebar.slider("Date", [datetime.Date(2020, 3, 1), datetime.Date(2021, 2, 1)])
-f = px.area(df.query(Date.between{values}”), 
-              x="Date", y="1000 Cases", 
+f = px.area(f.query(f”price.between{values}”), 
+              x=”Date”,
+              x=”1000 Cases”,
               color_discrete_sequence=px.colors.qualitative.Dark24,
               color="Country/Region",
               title ="Covid-19 Cases"
