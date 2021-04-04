@@ -28,3 +28,13 @@ fig = px.area(df, x="Date", y="1000 Cases",
 
 st.subheader('Graph: First Iteration')
 st.write(fig)
+
+
+fig2 = px.area(df, x="Date", y="1000 Cases", 
+              color_discrete_sequence=px.colors.qualitative.Dark24,
+              animation_frame="Mon_Year", animation_group="Country/Region",
+              color="Country/Region",
+              title ="Covid-19 Cases")
+
+st.subheader('Graph: Second Iteration')
+st.write(fig2)
