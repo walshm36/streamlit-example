@@ -21,7 +21,7 @@ df = load_data()
 st.subheader('Raw data')
 st.write(df)
 
-st.header("Cases Growth) 
+st.header("Cases Growth") 
 
 fig = px.area(df, x="Date", y="1000 Cases", 
               color_discrete_sequence=px.colors.qualitative.Dark24,
