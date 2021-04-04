@@ -20,7 +20,8 @@ st.write(df)
 
 fig = px.area(df, x="Date", y="1000 Cases", 
               color_discrete_sequence=px.colors.qualitative.Dark24,
-              template="plotly_white",
-              color="Country/Region")
+              color="Country/Region",
+              title ="Covid-19 Cases",
+              template="plotly_white")
 
 st.write(fig)
