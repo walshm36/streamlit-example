@@ -26,6 +26,6 @@ fig = px.area(df, x="Date", y="1000 Cases",
              # template="plotly_white"
              )
 
-st.selectbox('Select', ["Country/Region"])
+#st.selectbox('Select', ["Country/Region"])
 st.subheader('Graph: First Iteration')
 st.write(fig)
