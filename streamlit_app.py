@@ -33,5 +33,10 @@ st.subheader('Graph: Second Iteration')
 c = alt.Chart(df).mark_area().encode(
     x="Date", y="1000 Cases",
     color="Country/Region")
+.properties(
+    width='container',
+    height=200
+)
 
 st.altair_chart(c, use_container_width=True)
+
