@@ -35,7 +35,7 @@ c = alt.Chart(df).mark_area().encode(
     color="Country/Region"
 ).properties(
     width='container',
-    height=200
+    height=400
 )
 
 st.altair_chart(c, use_container_width=True)
