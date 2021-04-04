@@ -4,6 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 import plotly as py
+import plotly.express as px
 
 st.title('Maeves Covid Dashboard')                    
 
