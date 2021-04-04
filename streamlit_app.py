@@ -27,3 +27,6 @@ fig = px.area(df, x="Date", y="1000 Cases",
 
 st.subheader('Graph: First Iteration')
 st.write(fig)
+
+st.subheader('Graph: Second Iteration')
+st.area_chart(df)
