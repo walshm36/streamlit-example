@@ -51,6 +51,6 @@ f = px.area(df.query(f"Date.between{values}”), x="Date", y="1000 Cases",
               color_discrete_sequence=px.colors.qualitative.Dark24,
               color="Country/Region",
               title ="Covid-19 Cases"
-             )
+             ))
 st.plotly_chart(f)
           
