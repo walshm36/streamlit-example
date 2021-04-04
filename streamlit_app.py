@@ -5,6 +5,7 @@ import pandas as pd
 import streamlit as st
 import plotly as py
 import plotly.express as px
+import plotly.io as pio
 
 st.title('Maeves Covid Dashboard')                    
 
@@ -19,6 +20,7 @@ st.write(df)
 
 fig = px.area(df, x="Date", y="1000 Cases", 
               color_discrete_sequence=px.colors.qualitative.Dark24,
+              template=plotly_white,
               color="Country/Region")
 
 st.write(fig)
