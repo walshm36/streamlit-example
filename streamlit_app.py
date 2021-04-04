@@ -7,6 +7,7 @@ import plotly as py
 import plotly.express as px
 import plotly.io as pio
 import matplotlib as plt
+import datetime as dt
 
 st.title('Maeves Covid Dashboard :sunglasses:')        
 
@@ -45,10 +46,11 @@ st.altair_chart(c, use_container_width=True)
 
 st.subheader('Graph: Third Iteration')
 
-values = st.sidebar.slider(“Date”, float(df.Date.min()), 1000., (50., 300.))
+values = st.sidebar.slider(“Date”, [datetime.Date(2020, 3, 1), datetime.Date(2021, 2, 1)])
 f = px.area(df.query(f”Date.between{values}”), x="Date", y="1000 Cases", 
               color_discrete_sequence=px.colors.qualitative.Dark24,
               color="Country/Region",
               title ="Covid-19 Cases"
              )
 st.plotly_chart(f)
+          
