@@ -6,6 +6,7 @@ import streamlit as st
 import plotly as py
 import plotly.express as px
 import plotly.io as pio
+import matplotlib as plt
 
 st.title('Maeves Covid Dashboard :sunglasses:')        
 
