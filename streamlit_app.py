@@ -32,7 +32,7 @@ st.write(fig)
 
 fig2 = px.area(df, x="Date", y="1000 Cases", 
               color_discrete_sequence=px.colors.qualitative.Dark24,
-              animation_frame="Mon_Year", animation_group="Country/Region",
+              animation_frame="Date", animation_group="Country/Region",
               color="Country/Region",
               title ="Covid-19 Cases")
 
