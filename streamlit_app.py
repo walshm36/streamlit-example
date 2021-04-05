@@ -40,7 +40,7 @@ fig2 = px.choropleth(data_frame = df,
                     color_continuous_scale= 'YIOrRd', 
                     animation_frame= "Date")
 
-st.subheader('Global Cases)
+st.subheader('Global Cases')
 st.write(fig2)
 
 
