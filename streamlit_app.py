@@ -40,11 +40,11 @@ fig2 = px.choropleth(data_frame = df,
 
 col1, col2 = st.beta_columns(2)
 
-col1.subheader("Daily Cases :Microbe:")
+col1.subheader("Daily Cases :mask:")
 col1.write(fig, use_column_width=True)
 
 
-col2.subheader("Global Cases :Earth Globe Europe-Africa:")
+col2.subheader("Global Cases :earth_africa:")
 col2.write(fig2, use_column_width=True)
 #with st.beta_expander("See explanation"):
  #    st.write("""
