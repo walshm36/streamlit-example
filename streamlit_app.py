@@ -37,7 +37,7 @@ fig2 = px.choropleth(data_frame = df,
                     locations= "iso_alpha",
                     color= "1000 Cases", 
                     hover_name= "Country_Region",
-                    color_continuous_scale= 'YIOrRd', 
+                    color_continuous_scale= 'YlOrRd', 
                     animation_frame= "Date")
 
 st.subheader('Global Cases')
