@@ -46,9 +46,9 @@ st.altair_chart(c, use_container_width=True)
 
 fig2 = px.choropleth(data_frame = df, 
                     locations= "iso_alpha",
-                    color= "value", 
+                    color= "1000 cases", 
                     hover_name= "Country_Region",
-                    color_continuous_scale= 'RdYlGn', 
+                    color_continuous_scale= 'balance', 
                     animation_frame= "Date")
 
 st.subheader('Graph: Third Iteration')
