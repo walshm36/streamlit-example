@@ -44,7 +44,7 @@ c = alt.Chart(df).mark_area().encode(
 
 st.altair_chart(c, use_container_width=True)
 
-fig2 = px.choropleth(data_frame = df1, 
+fig2 = px.choropleth(data_frame = df, 
                     locations= "iso_alpha",
                     color= "value", 
                     hover_name= "Country_Region",
