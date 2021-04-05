@@ -18,9 +18,6 @@ def load_data():
     return data
 df = load_data()
 
-st.subheader('Raw data')
-st.write(df)
-
 st.header("Cases Growth") 
 
 fig = px.area(df, x="Date", y="1000 Cases", 
@@ -29,8 +26,6 @@ fig = px.area(df, x="Date", y="1000 Cases",
               title ="Covid-19 Cases"
              )
 
-st.subheader('Daily Cases')
-st.write(fig)
 
 
 fig2 = px.choropleth(data_frame = df, 
@@ -40,8 +35,23 @@ fig2 = px.choropleth(data_frame = df,
                     color_continuous_scale= 'YlOrRd', 
                     animation_frame= "Date")
 
-st.subheader('Global Cases')
-st.write(fig2)
+
+
+col1, col2 = st.beta_columns([1, 2])
+
+col1.subheader("Daily Cases")
+col1.line_chart(fig)
+
+
+col2.subheader("Global Cases")
+col2.write(fig2)
+
+
+
+t.subheader('Raw data')
+st.write(df)
+
+
 
 
 
