@@ -37,7 +37,7 @@ fig2 = px.choropleth(data_frame = df,
 
 
 
-col1, col2 = st.beta_columns([1, 2])
+col1, col2 = st.beta_columns([2, 2])
 
 col1.subheader("Daily Cases")
 col1.write(fig)
@@ -45,7 +45,10 @@ col1.write(fig)
 
 col2.subheader("Global Cases")
 col2.write(fig2)
-
+with st.beta_expander("See explanation"):
+     st.write("""
+         Cases emerging each day
+     """)
 
 
 st.subheader('Raw data')
