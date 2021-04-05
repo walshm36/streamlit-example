@@ -46,7 +46,7 @@ st.altair_chart(c, use_container_width=True)
 
 fig2 = px.choropleth(data_frame = df, 
                     locations= "iso_alpha",
-                    color= "1000 cases", 
+                    color= "1000 Cases", 
                     hover_name= "Country_Region",
                     color_continuous_scale= 'balance', 
                     animation_frame= "Date")
