@@ -46,10 +46,10 @@ col1.write(fig, use_column_width=True)
 
 col2.subheader("Global Cases")
 col2.write(fig2, use_column_width=True)
-with st.beta_expander("See explanation"):
-     st.write("""
-         Cases emerging each day
-     """)
+#with st.beta_expander("See explanation"):
+ #    st.write("""
+  #       Cases emerging each day
+   #  """)
 
 
 st.subheader('Raw data')
