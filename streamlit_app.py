@@ -40,7 +40,7 @@ fig2 = px.choropleth(data_frame = df,
 col1, col2 = st.beta_columns([1, 2])
 
 col1.subheader("Daily Cases")
-col1.line_chart(fig)
+col1.write(fig)
 
 
 col2.subheader("Global Cases")
@@ -48,7 +48,7 @@ col2.write(fig2)
 
 
 
-t.subheader('Raw data')
+st.subheader('Raw data')
 st.write(df)
 
 
