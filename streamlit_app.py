@@ -23,7 +23,7 @@ st.header("Cases Growth")
 
 fig = px.area(df, x="Date", y="1000 Cases", 
               color_discrete_sequence=px.colors.qualitative.Dark24,
-              color="Continent",
+              color="Country_Region",
               title ="Covid-19 Cases"
              )
 
