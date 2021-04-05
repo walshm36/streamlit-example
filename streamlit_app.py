@@ -38,7 +38,7 @@ fig2 = px.choropleth(data_frame = df,
 
 
 
-col1, col2 = st.beta_columns([2, 2])
+col1, col2 = st.beta_columns(2)
 
 col1.subheader("Daily Cases")
 col1.write(fig, use_column_width=True)
