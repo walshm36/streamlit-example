@@ -44,6 +44,15 @@ c = alt.Chart(df).mark_area().encode(
 
 st.altair_chart(c, use_container_width=True)
 
+fig2 = px.choropleth(data_frame = df1, 
+                    locations= "iso_alpha",
+                    color= "value", 
+                    hover_name= "Country_Region",
+                    color_continuous_scale= 'RdYlGn', 
+                    animation_frame= "Date")
+
 st.subheader('Graph: Third Iteration')
+st.write(fig2)
+
 
 
