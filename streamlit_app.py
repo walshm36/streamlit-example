@@ -9,6 +9,7 @@ import plotly.io as pio
 import matplotlib as plt
 import datetime as dt
 
+st.beta_set_page_config(layout="wide")
 st.title('Maeves Covid Dashboard :sunglasses:')        
 
 DATA_URL = ('melted_cases.csv')
