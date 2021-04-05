@@ -9,7 +9,7 @@ import plotly.io as pio
 import matplotlib as plt
 import datetime as dt
 
-st.beta_set_page_config(layout="wide")
+#st.beta_set_page_config(layout="wide")
 st.title('Maeves Covid Dashboard :sunglasses:')        
 
 DATA_URL = ('melted_cases.csv')
@@ -41,11 +41,11 @@ fig2 = px.choropleth(data_frame = df,
 col1, col2 = st.beta_columns([2, 2])
 
 col1.subheader("Daily Cases")
-col1.write(fig, use_container_width=True)
+col1.write(fig, use_column_width=True)
 
 
 col2.subheader("Global Cases")
-col2.write(fig2)
+col2.write(fig2, use_column_width=True)
 with st.beta_expander("See explanation"):
      st.write("""
          Cases emerging each day
