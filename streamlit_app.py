@@ -29,29 +29,18 @@ fig = px.area(df, x="Date", y="1000 Cases",
               title ="Covid-19 Cases"
              )
 
-st.subheader('Graph: First Iteration')
+st.subheader('Daily Cases')
 st.write(fig)
 
-st.subheader('Graph: Second Iteration')
-
-c = alt.Chart(df).mark_area().encode(
-    x="Date", y="1000 Cases",
-    color="Country_Region"
-).properties(
-    width='container',
-    height=400
-)
-
-st.altair_chart(c, use_container_width=True)
 
 fig2 = px.choropleth(data_frame = df, 
                     locations= "iso_alpha",
                     color= "1000 Cases", 
                     hover_name= "Country_Region",
-                    color_continuous_scale= 'balance', 
+                    color_continuous_scale= 'YIOrRd', 
                     animation_frame= "Date")
 
-st.subheader('Graph: Third Iteration')
+st.subheader('Global Cases)
 st.write(fig2)
 
 
