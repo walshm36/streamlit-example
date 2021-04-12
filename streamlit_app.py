@@ -48,7 +48,7 @@ st.date_input('Date input')
 
 
 #col2
-st..subheader("Global Cases :earth_africa:")
+st.subheader("Global Cases :earth_africa:")
 #col2
 st.write(fig2, use_column_width=True)
 #with st.beta_expander("See explanation"):
