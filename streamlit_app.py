@@ -45,6 +45,7 @@ st.subheader("Daily Cases :mask:")
 #col1
 st.write(fig, use_column_width=True)
 st.date_input('Date input')
+st.multiselect('Multiselect', df1["Country_Region"])
 
 
 #col2
