@@ -38,22 +38,26 @@ fig2 = px.choropleth(data_frame = df,
 
 
 
-col1, col2 = st.beta_columns(2)
+#col1, col2 = st.beta_columns(2)
 
-col1.subheader("Daily Cases :mask:")
-col1.write(fig, use_column_width=True)
+#col1.
+st.subheader("Daily Cases :mask:")
+#col1
+st.write(fig, use_column_width=True)
 st.date_input('Date input')
 
 
-col2.subheader("Global Cases :earth_africa:")
-col2.write(fig2, use_column_width=True)
+#col2
+st..subheader("Global Cases :earth_africa:")
+#col2
+st.write(fig2, use_column_width=True)
 #with st.beta_expander("See explanation"):
  #    st.write("""
   #       Cases emerging each day
    #  """)
 
 
-st.subheader('Raw data')
-st.write(df)
+#st.subheader('Raw data')
+#st.write(df)
 
 
