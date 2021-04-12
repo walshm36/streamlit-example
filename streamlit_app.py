@@ -42,6 +42,7 @@ col1, col2 = st.beta_columns(2)
 
 col1.subheader("Daily Cases :mask:")
 col1.write(fig, use_column_width=True)
+st.date_input('Date input')
 
 
 col2.subheader("Global Cases :earth_africa:")
