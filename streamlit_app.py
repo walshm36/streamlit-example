@@ -43,9 +43,10 @@ fig2 = px.choropleth(data_frame = df,
 #col1.
 st.subheader("Daily Cases :mask:")
 #col1
+st.multiselect('Multiselect', df["Country_Region"])
 st.write(fig, use_column_width=True)
 #st.date_input('Date input')
-st.multiselect('Multiselect', df["Country_Region"])
+
 
 
 #col2
