@@ -10,7 +10,7 @@ import matplotlib as plt
 import datetime as dt
 
 #st.beta_set_page_config(layout="wide")
-st.title('Maeves Covid Dashboard :sunglasses:')        
+st.title('Maeves Covid Dashboard')        
 
 DATA_URL = ('melted_cases.csv')
 @st.cache
@@ -44,7 +44,7 @@ fig2 = px.choropleth(data_frame = df,
 st.subheader("Daily Cases :mask:")
 #col1
 st.write(fig, use_column_width=True)
-st.date_input('Date input')
+#st.date_input('Date input')
 st.multiselect('Multiselect', df["Country_Region"])
 
 
@@ -52,10 +52,10 @@ st.multiselect('Multiselect', df["Country_Region"])
 st.subheader("Global Cases :earth_africa:")
 #col2
 st.write(fig2, use_column_width=True)
-#with st.beta_expander("See explanation"):
- #    st.write("""
-  #       Cases emerging each day
-   #  """)
+with st.beta_expander("See explanation"):
+     st.write("""
+         Cases emerging each day
+     """)
 
 
 #st.subheader('Raw data')
